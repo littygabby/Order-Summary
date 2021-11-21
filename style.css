@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  max-width: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-desktop {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hero {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  z-index: 2;
+}
+
+.text-content {
+  padding: 5%;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.text-content h2 {
+  padding-bottom: 10px;
+}
+
+p {
+  color: grey;
+  font-weight: 700;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7% 0;
+}
+
+.icon_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon_wrapper .annual {
+  padding-left: 20px;
+}
+
+.annual {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn .proceed {
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-weight: 900;
+  box-shadow: 1px 1px 1px black;
+}
+
+.btn .cancel {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-weight: 900;
+}
+
+.attribution {
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        max-width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .bg-desktop {
+        display: none;
+    }
+    
+    .attribution {
+        margin-top: 10%;
+    }
+}
